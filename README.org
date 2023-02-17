@@ -1,0 +1,11 @@
+* Example Spark finding odd keys
+
+** Running
+
+passing only input directory will print result to stdout
+~sbt "run $INPUT_DIR"~
+example: ~sbt "run ./test/data"~
+
+to redirect output to directory pass in second parameter
+~sbt "run $INPUT_DIR $OUTPUT_DIR"~
+example: ~sbt "run ./test/data ./test/result"~
