@@ -2,10 +2,16 @@
 
 ** Running
 
-passing only input directory will print result to stdout
-~sbt "run $INPUT_DIR"~
-example: ~sbt "run ./test/data"~
+#+BEGIN_SRC bash
 
-to redirect output to directory pass in second parameter
-~sbt "run $INPUT_DIR $OUTPUT_DIR"~
-example: ~sbt "run ./test/data ./test/result"~
+# passing only input directory will print result to stdout
+# sbt "run $INPUT_DIR"
+# Example:
+sbt "run ./test/data"
+
+# to redirect output to directory pass in second parameter
+# sbt "run $INPUT_DIR $OUTPUT_DIR"
+# Example: 
+sbt "run ./test/data ./test/result"
+
+#+END_SRC
