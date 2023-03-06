@@ -8,11 +8,16 @@
       let
         version = "0.0.3";
         pkgs = nixpkgs.legacyPackages.${system};
+        jre = pkgs.jdk11;
+        scala = pkgs.scala.override {jre = jre;};
+        sbt = pkgs.sbt.override {jre = jre;};
+        metals = pkgs.sbt.override{jre = jre;};
+
 
         myDevTools = [
-          pkgs.scala
-          pkgs.sbt
-          pkgs.metals
+          scala
+          sbt
+          metals
         ];
 
       in {
